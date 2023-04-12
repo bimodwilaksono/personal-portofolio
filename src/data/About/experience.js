@@ -1,6 +1,6 @@
 export const experience = [
     {
-        company: "Refactory Indonesia",
+        company: "Refactory Indonesia - Junior Full Stack Engineer",
         position: "Junior Full Stack Engineer",
         jobs: [
             "Building REST API using Express.js",
@@ -12,14 +12,16 @@ export const experience = [
             "Adding user interactivity of React Canvas such as Undo, Clear All, and Finish Sketch",
         ],
         timeRange: "Aug 2022 - Nov 2022",
+        icon: "/images/refactory.png",
     },
     {
-        company: "Enigma Camp",
+        company: "Enigma Camp - IT Trainee",
         position: "IT Trainee",
         jobs: [
             "Building REST API using Spring Boot Java",
             "Authentication & Authorization with JWT",
         ],
         timeRange: "Feb 2023 - present",
+        icon: "images/enigmacamp.svg",
     },
 ];

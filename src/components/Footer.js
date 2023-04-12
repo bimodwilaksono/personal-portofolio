@@ -1,4 +1,4 @@
-import { createStyles, Container, Group, ActionIcon, rem, Button } from "@mantine/core";
+import { createStyles, Container, Group, ActionIcon, rem, Button, Footer } from "@mantine/core";
 import { MantineLogo } from "@mantine/ds";
 import { contacts } from "@/data/Contact/contact";
 
@@ -40,7 +40,7 @@ const useStyles = createStyles((theme) => ({
     },
 }));
 
-export default function Footer() {
+export default function FooterComponent() {
     const { classes } = useStyles();
 
     const icons = contacts.map((contact) => {
@@ -59,13 +59,13 @@ export default function Footer() {
     });
 
     return (
-        <div className={classes.footer}>
+        <Footer className={classes.footer}>
             <Container className={classes.inner}>
                 <MantineLogo size={28} />
                 <Group spacing={0} className={classes.links} position='right' noWrap>
                     {icons}
                 </Group>
             </Container>
-        </div>
+        </Footer>
     );
 }

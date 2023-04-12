@@ -1,22 +1,28 @@
 import React from "react";
-import Footer from "./Footer";
+import FooterComponent from "./Footer";
 import Navigation from "./Navigation";
-import { createStyles } from "@mantine/core";
+import { createStyles, AppShell } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
     main: {
-        height: "65vh",
+        height: "60vh",
+    },
+    footer: {
+        position: "sticky",
+        left: 0,
+        bottom: 0,
+        zIndex: 9999999,
     },
 }));
 
 const Layout = ({ children }) => {
     const { classes, cx } = useStyles();
     return (
-        <>
-            <Navigation />
+        <AppShell header={<Navigation />} footer={<FooterComponent />} p={"2rem"}>
+            {/* <Navigation /> */}
             <main className={cx(classes.main)}>{children}</main>
-            <Footer />
-        </>
+            {/* <Footer className={classes.footer} /> */}
+        </AppShell>
     );
 };
 
