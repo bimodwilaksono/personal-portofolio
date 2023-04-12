@@ -3,7 +3,7 @@ import React from "react";
 
 function Navigation() {
     return (
-        <div className='flex justify-start gap-3 font-bold'>
+        <div>
             <Link href={"/"}>Home</Link>
             <Link href={"/about"}>About</Link>
             <Link href={"/skills"}>Skills</Link>
