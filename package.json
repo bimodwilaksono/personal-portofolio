@@ -18,11 +18,13 @@
     "@tabler/icons-react": "^2.15.0",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "framer-motion": "^10.11.5",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
+    "react-type-animation": "^3.0.1",
     "styled-components": "^5.3.9"
   }
 }
