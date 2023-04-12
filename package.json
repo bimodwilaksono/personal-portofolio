@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@hookform/resolvers": "^3.0.1",
     "@mantine/core": "^6.0.7",
     "@mantine/ds": "^6.0.7",
     "@mantine/form": "^6.0.7",
@@ -25,6 +26,7 @@
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
     "react-type-animation": "^3.0.1",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "yup": "^1.0.2"
   }
 }

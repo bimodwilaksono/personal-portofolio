@@ -5,7 +5,7 @@ import { createStyles, AppShell } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
     main: {
-        height: "60vh",
+        height: "100vh",
     },
     footer: {
         position: "sticky",

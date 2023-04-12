@@ -1,11 +1,4 @@
-import {
-    createStyles,
-    ThemeIcon,
-    Text,
-    SimpleGrid,
-    Box,
-    Stack,
-} from "@mantine/core";
+import { createStyles, ThemeIcon, Text, SimpleGrid, Box, Stack } from "@mantine/core";
 import { IconSun, IconPhone, IconMapPin, IconAt } from "@tabler/icons-react";
 
 const useStyles = createStyles((theme, { variant }) => ({
@@ -19,18 +12,15 @@ const useStyles = createStyles((theme, { variant }) => ({
         marginRight: theme.spacing.md,
         backgroundImage:
             variant === "gradient"
-                ? `linear-gradient(135deg, ${
-                      theme.colors[theme.primaryColor][4]
-                  } 0%, ${theme.colors[theme.primaryColor][6]} 100%)`
+                ? `linear-gradient(135deg, ${theme.colors[theme.primaryColor][4]} 0%, ${
+                      theme.colors[theme.primaryColor][6]
+                  } 100%)`
                 : "none",
         backgroundColor: "transparent",
     },
 
     title: {
-        color:
-            variant === "gradient"
-                ? theme.colors.gray[6]
-                : theme.colors[theme.primaryColor][0],
+        color: variant === "gradient" ? theme.colors.gray[6] : theme.colors[theme.primaryColor][0],
     },
 
     description: {
@@ -70,14 +60,14 @@ function ContactIcon({
 }
 
 const MOCKDATA = [
-    { title: "Email", description: "hello@mantine.dev", icon: IconAt },
-    { title: "Phone", description: "+49 (800) 335 35 35", icon: IconPhone },
+    { title: "Email", description: "bimodlaksono@gmail.com", icon: IconAt },
+    // { title: "Phone", description: "+49 (800) 335 35 35", icon: IconPhone },
     {
         title: "Address",
-        description: "844 Morris Park avenue",
+        description: "Jakarta, Indonesia",
         icon: IconMapPin,
     },
-    { title: "Working hours", description: "8 a.m. – 11 p.m.", icon: IconSun },
+    { title: "Working hours", description: "8 a.m. – 5 p.m.", icon: IconSun },
 ];
 
 export function ContactIconsList({ data = MOCKDATA, variant }) {
@@ -107,7 +97,7 @@ export function ContactIcons() {
                         theme.colors[theme.primaryColor][6]
                     } 0%, ${theme.colors[theme.primaryColor][4]} 100%)`,
                 })}>
-                <ContactIconsList variant='white' />
+                {/* <ContactIconsList variant='white' /> */}
             </Box>
         </SimpleGrid>
     );
