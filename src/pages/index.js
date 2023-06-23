@@ -43,8 +43,9 @@ export default function Home() {
                         sequence={[
                             "Junior Frontend Developer",
                             2000,
-                            "Junior Backend Developer",
-                            2000,
+                            ""
+                            // "Junior Backend Developer",
+                            // 2000,
                         ]}
                         speed={50}
                         repeat={Infinity}
