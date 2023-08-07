@@ -12,6 +12,7 @@ import {
     Text,
 } from "@mantine/core";
 import { TypeAnimation } from "react-type-animation";
+import imageProfile from "../../public/images/personal.jpg";
 
 const useStyles = createStyles((theme) => ({
     gradientText: {
@@ -27,25 +28,29 @@ const useStyles = createStyles((theme) => ({
         lineHeight: 1,
         marginTop: -5,
     },
-    // image: {
-    //     borderRadius:
-    // }
+    image: {
+        borderRadius: "100%",
+        backgroundImage: `url(/images/personal.jpg)`,
+        backgroundPosition: "50% 45%",
+        backgroundSize: "cover",
+        minWidth: `300px`,
+        minHeight: `300px`,
+
+    },
 }));
 
 export default function Home() {
     const { classes } = useStyles();
     return (
         <Container h={"100%"}>
-            <Flex align={"center"} h={"100%"}>
+            <Flex align={"center"} h={"75%"} gap={'4rem'}>
                 <Box>
                     <Title>Bimo Dwi Laksono</Title>
                     <TypeAnimation
                         sequence={[
                             "Junior Frontend Developer",
                             2000,
-                            ""
-                            // "Junior Backend Developer",
-                            // 2000,
+                            "",
                         ]}
                         speed={50}
                         repeat={Infinity}
@@ -70,14 +75,16 @@ export default function Home() {
                         })}
                     </Flex>
                 </Box>
-                {/* <Image
-                    maw={240}
-                    mx={"auto"}
-                    mah={240}
-                    radius={"100%"}
-                    src='/images/profile.png'
-                    alt=''
-                /> */}
+                <Box className={classes.image}>
+                    {/* <Image
+                        maw={240}
+                        mx={"auto"}
+                        radius='100%'
+                        src='/images/personal.jpg'
+                        fit='cover'
+                        alt=''
+                    /> */}
+                </Box>
             </Flex>
         </Container>
     );
