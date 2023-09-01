@@ -1,5 +1,5 @@
 import { createStyles, Container, Group, ActionIcon, rem, Button, Footer } from "@mantine/core";
-import { MantineLogo } from "@mantine/ds";
+// import { MantineLogo } from "@mantine/ds";
 import { contacts } from "@/data/Contact/contact";
 
 const useStyles = createStyles((theme) => ({
@@ -61,7 +61,7 @@ export default function FooterComponent() {
     return (
         <Footer className={classes.footer}>
             <Container className={classes.inner}>
-                <MantineLogo size={28} />
+                {/* <MantineLogo size={28} /> */}
                 <Group spacing={0} className={classes.links} position='right' noWrap>
                     {icons}
                 </Group>
